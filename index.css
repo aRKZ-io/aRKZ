@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*SECTION 1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.banner1{
+    background-color: black;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+img{
+    height: 70vh;
+    opacity: 30%;
+}
+.navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    font-family: 'Poppins';
+    align-items: center;
+}
+h1{
+    padding-left: 5.5rem;
+    letter-spacing: 2px;
+    font-size: larger;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 5.5rem;
+    cursor: pointer;
+}
+ul li:hover{
+    color: rgb(109, 0, 0);
+    transition: .5s;
+}
+.content{
+    color: white;
+    list-style: none;
+    font-family: 'Poppins';
+}
+li h2{
+    color: rgb(109, 0, 0);
+    padding-bottom: .8rem;
+    font-size: 2.2rem;
+    font-weight: bolder;
+}
+li h3{
+    font-weight: lighter;
+    font-size: 1rem;
+    color: rgb(134, 134, 134);
+}
+li h4{
+    font-weight: normal;
+}
+li button{
+    height: 5vh;
+    width: 100px;
+    margin-top: 2rem;
+    border-radius: 40px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(109, 0, 0);
+    font-family: 'Poppins';
+    font-size: large;
+    font-weight: lighter;
+}
+li button:hover{
+    background-color: rgb(109, 0, 0);
+    transition: ease-in .5s;
+}
+li button::after{
+    background-color: transparent;
+    transition: ease-in .5s;
+}
+.candp{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*SECTION 2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.banner2{
+    background-color: rgb(10, 10, 10);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+.banner2 h2{
+    font-family: 'Poppins';
+    font-weight: normal;
+    color: white;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    padding-top: 2.6rem;
+} 
+.what{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2.5rem;
+}
+.card{
+    background-color: transparent;
+    height: 20rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    border: 3px solid rgb(109, 0, 0);
+    color: white;
+    font-family: 'Poppins';
+    font-size: larger;
+    font-weight: normal;
+    letter-spacing: 1px;
+    align-items: center;
+}
+h6{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: lighter;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: small;
+    padding-top: 1rem;
+    display: none;
+}
+.banner2 li h5{
+    color: white;
+    font-family: 'Poppins';
+    font-size: large;
+    font-weight: lighter;
+}
+
+
+
+/*SECTION 3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.banner3{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*RESPONSIVENESS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media screen and (max-width: 1256px ) {
+    .content{
+        padding-left: 3rem;
+    }
+}
+@media screen and (max-width: 1188px ) {
+    .content{
+        padding-left: 2rem;
+        padding-top: 3rem;
+    }
+    li h3{
+        font-size: small;
+    }
+    .banner2{
+        height: 70vh;
+    }
+}
+@media screen and (max-width: 1024px) {
+    h1{
+        font-size: larger;
+    }
+    ul li{
+        font-size: small;
+        padding-right: 4.5rem;
+    }
+    .content{
+        padding-top: 4rem;
+        padding-left: 2.5rem;
+    }
+    li h3{
+        font-size: smaller;
+    }
+    
+}
+@media screen and (min-width: 957px) {
+    .banner2 li h5{
+        display: none;
+    }
+}
+@media screen and (max-width: 956px) {
+    ul li{
+        display: none;
+    }
+    h3{
+        display: none;
+    }
+    .content{
+        padding-top: 9rem;
+        padding-left: 6rem;
+    }
+    li h4{
+        font-size: larger;
+    }
+    li h2{
+        font-size: 1.8rem;
+    }
+    img{
+        padding-right: 6rem;
+    }
+    li button{
+        margin-top: .1rem;
+    }
+    .banner2 li h5{
+        color: rgb(134, 134, 134);
+        padding-top: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-size: small;
+    }
+    .banner2{
+        height: 75vh;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .content{
+        position: absolute;
+        padding-left: 1.5rem;
+        padding-top: 20rem;
+        z-index: 1000;
+    }
+    .banner2{
+        height: 80vh;
+    }
+    img{
+        padding-left: 6rem;
+    }
+    li button{
+        margin-top: 0rem;
+        margin-left: 3rem;
+    }
+    .card{
+        font-size: small;
+        height: 18rem;
+        width: 12rem;
+    }
+    .banner2{
+        height: 75vh;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .content{
+        position: absolute;
+        padding-left: 1.5rem;
+        padding-top: 30rem;
+    }
+    .banner2{
+        height: 87vh;
+    }
+    .what{
+        display: grid;
+        grid-template-columns: 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem;
+        grid-template-rows: 2.2rem 2.2rem 2.2rem 2.2rem 2.2rem 2.2rem 2.2rem 2.2rem 2.2rem 2.2rem 2.2rem;
+    }
+    .card{
+        width: auto;
+        height: auto;
+    }
+    .web{
+        grid-row: 2 / 11;
+        grid-column: 2 / 6;
+    }
+    .uiux{
+        grid-row: 2 / 6;
+        grid-column: 7 / 11;
+    }
+    .model{
+        grid-row: 7 / 11;
+        grid-column: 7 / 11;
+    }
+    img{
+        height: 50vh;
+        padding-top: 3rem;
+        padding-left: 6.6rem;
+    }
+    li button{
+        margin-top: 0rem;
+        margin-left: 3rem;
+    }
+    .banner2 li h5{
+        padding-top: 1rem;
+    }
+}
+@media screen and (max-width:528px) {
+    img{
+        height: 27vh;
+        padding-top: 10rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    
+    .banner2 li h5{
+        padding-top: 1rem;
+    }
+    .card{
+        border-radius: 25px;
+    }
+    img{
+        height: 30vh;
+        padding-top: 3rem;
+    }
+    h1{
+        font-size: small;
+        padding-left: 2.5rem;
+    }
+    li button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .what{
+        display: grid;
+        grid-template-columns: 1.8rem 1.8rem 1.8rem 1.8rem 1.8rem 1.8rem 1.8rem 1.8rem 1.8rem 1.8rem 1.8rem;
+        grid-template-rows: 1.8rem 1.8rem 1.8rem 1.8rem 1.8rem 1.8rem 1.8rem 1.8rem 1.8rem 1.8rem 1.8rem;
+    }
+    .banner2{
+        height: 80vh;
+    }
+    /*.what{
+        display: grid;
+    }*/
+}
+
+@media screen and (max-width:375px) {
+    img{
+        height: 27vh;
+        padding-top: 5rem;
+    }
+    .content{
+        padding-top: 30rem;
+        padding-right: 1rem;
+    }
+}
+@media screen and (max-width:320px) {
+    img{
+        height: 22vh;
+        padding-top: 10rem;
+        padding-left: 5rem;
+    }
+    .content{
+        padding-top: 30rem;
+        padding-left: 1rem;
+    }
+    .card{
+        font-size: xx-small;
+    }
+    .banner2{
+        height: 90vh;
+    }
+    .banner2 li h5{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
