@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="banner1">
+    <div class="banner1" id="banners">
         <div class="navbar">
             <h1>NOAH</h1>
             <ul>
@@ -16,6 +16,7 @@
                 <li>About</li>
                 <li>Contact</li>
             </ul>
+            <button id="ator" onclick="showCard()"></button>
         </div>
         <div class="candp">
             <div class="content">
@@ -25,11 +26,17 @@
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut <br>
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>
                     nisi ut aliquip ex ea commodo consequat.</li></h3>
-                <a href="hire.html"><li><button>HIRE</button></li></a>
+                <li><button onclick = "scrollToSection()">HIRE</button></li>
             </div>
             <img src="noah.jpeg" alt="no img">
-            
-        </div>
+            <div id="roll">
+                <ul>
+                    <li>Home</li>
+                    <li>Jobs</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
     </div>
 
     <div class="banner2">
@@ -49,8 +56,18 @@
         </li>
     </div>
 
-    <div class="banner3">
-        
+    <div id = "banner3">
+        <div class="why">
+
+        </div>
     </div>
+
+    <div class="banner4"></div>
+
+    <footer></footer>
+
+    
+
+    <script src = "index.js"></script>
 </body>
 </html>
