@@ -136,8 +136,58 @@ img{
     width: 25%;
     border-radius: 20px;
     align-items: center;
+    font-family: 'Poppins';
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-weight: normal;
 }
-
+.card:hover{
+    transform: translateY(-15px);
+}
+.card::after{
+    transform: translateY(15px);
+}
+.one{
+    background-image: url('forth.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 30%;
+}
+.one:hover{
+    opacity: 90%;
+    transition: 1.5s;
+}
+.mini1{
+    background-color: rgb(80, 0, 0);
+}
+.two{
+    background-image: url('pexels-flo-dahm-699459.jpg');
+    background-size: cover;
+    background-position: bottom;
+    opacity: 30%;
+}
+.two:hover{
+    opacity: 90%;
+    transition: 1.5s;
+}
+.mini2{
+    background-color: rgb(80, 0, 0);
+}
+.three{
+    background-image: url('second.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 30%;
+}
+.three:hover{
+    opacity: 90%;
+    transition: 1.5s;
+}
+.mini3{
+    background-color: rgb(80, 0, 0);
+}
 
 /*BANNER 3*/
 .banner3{
@@ -165,6 +215,10 @@ img{
 .buut{
     margin-left: 7%;
     width: 15rem;
+}
+
+.banner4{
+    width: 100%;
 }
 
 
@@ -255,6 +309,15 @@ img{
     }
     .card{
         height: 12rem;
+    }
+    .one{
+        opacity: 90%;
+    }
+    .two{
+        opacity: 90%;
+    }
+    .three{
+        opacity: 90%;
     }
 }
 @media  screen and (max-width: 712px) {
