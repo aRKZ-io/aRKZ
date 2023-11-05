@@ -357,10 +357,10 @@ footer li h3{
     .six h3{
         font-size: 1rem;
     }
-    li h3{
+    footer li h3{
         font-size: 1rem;
     }
-    li h4{
+    footer li h4{
         font-size: .8rem;
     }
     .card{
@@ -412,11 +412,11 @@ footer li h3{
     .six h3{
         font-size: .9rem;
     }
-    li h3{
+    footer li h3{
         font-size: .9rem;
         font-weight: lighter;
     }
-    li h4{
+    footer li h4{
         font-size: .7rem;
         font-weight: lighter;
 
@@ -437,10 +437,10 @@ footer li h3{
     .six h3{
         font-size: .7rem;
     }
-    li h3{
+    footer li h3{
         font-size: .7rem;
     }
-    li h4{
+    footer li h4{
         font-size: .5rem;
     }
     .l1 li{
@@ -482,6 +482,9 @@ footer li h3{
     }
     .six h3{
         display: none;
+    }
+    footer{
+        height: 22vh;
     }
 }
 @media  screen and (max-width : 375px) {
