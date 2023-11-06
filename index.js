@@ -26,4 +26,14 @@ function scrollToSectio() {
     section.scrollIntoView ({ behavior:"smooth" })
 }
 
-    
+function downloadPhoto() {
+    var userConfirmed = window.confirm("Do you want to download CV?")
+
+    if (userConfirmed) {
+        var photoPath = 'noah.jpeg';
+        var link = document.createElement('a');
+        link.href = photoPath;
+        link.download = 'noah.jpeg';
+        link.click();
+    }
+}
