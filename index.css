@@ -31,6 +31,59 @@
     align-items: center;
     font-family: 'Poppins';
 }
+.navbar2{
+    background-color: rgb(80, 0, 0);
+    height: 11.5rem;
+    border-radius: 1rem;
+    opacity: 80%;
+    width: 0;
+    position: absolute;
+    top: 6rem;
+    right: 7%;
+    overflow-y: auto;
+    transition: 0.5s;
+    z-index: 1000;
+}
+.navbar2 li{
+    padding: 8%;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: 'Poppins';
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: right;
+    transition: 1.5s;
+}
+.navbar2 li:hover{
+    color: white;
+    animation: ease-in;
+    transition: 1s;
+}
+.closebtn{
+    position: absolute;
+    top: 2rem;
+    right: 7%;
+    cursor: pointer;
+    color: white;
+}
+#dicon{
+    color: rgb(80, 0, 0);
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+#dicon2{
+    color: rgb(80, 0, 0);
+    cursor: pointer;
+    font-size: 1.3rem;
+    display: none;
+}
+.iconss{
+    padding-right: 7%;
+    display: flex;
+    align-items: center;
+}
 .logo{
     letter-spacing: 3px;
     font-size: larger;
@@ -155,6 +208,7 @@ img{
     background-size: cover;
     background-position: center;
     opacity: 30%;
+    background-blend-mode: multiply;
 }
 .one:hover{
     opacity: 90%;
@@ -303,15 +357,27 @@ footer li h3{
     .content{
         padding-left: 3%;
     }
+    ul li{
+        padding-left: 3rem;
+    }
 }
 @media  screen and (min-width : 820.9px) {
     .mobile{
+        display: none;
+    }
+    .iconss{
+        display: none;
+    }
+    .navbar2{
         display: none;
     }
 }
 @media  screen and (max-width : 820.9px) {
     #desktop{
         display: none;
+    }
+    ul li{
+        padding-left: .3rem;
     }
     .content{
         position: absolute;

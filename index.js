@@ -16,6 +16,9 @@ function scrollToSection() {
 
     //Scrolling selection
     section.scrollIntoView ({ behavior:"smooth" })
+    document.getElementById("mySideNav").style.width = "0";
+    document.getElementById("dicon").style.display = "flex";
+    document.getElementById("dicon2").style.display = "none";
 }
 
 function scrollToSectio() {
@@ -24,6 +27,9 @@ function scrollToSectio() {
 
     //Scrolling selection
     section.scrollIntoView ({ behavior:"smooth" })
+    document.getElementById("mySideNav").style.width = "0";
+    document.getElementById("dicon").style.display = "flex";
+    document.getElementById("dicon2").style.display = "none";
 }
 
 function downloadPhoto() {
@@ -35,5 +41,28 @@ function downloadPhoto() {
         link.href = photoPath;
         link.download = 'noah.jpeg';
         link.click();
+    }
+}
+
+function openNav() {
+    document.getElementById("mySideNav").style.width = "8.8rem";
+    document.getElementById("dicon2").style.display = "flex";
+    document.getElementById("dicon").style.display = "none";
+    document.getElementById("opa").style.opacity = "50%";
+    document.getElementById("opa").style.transition = "0.5s";
+    
+}
+
+function closeNav() {
+    document.getElementById("mySideNav").style.width = "0";
+    document.getElementById("dicon").style.display = "flex";
+    document.getElementById("dicon2").style.display = "none";
+    document.getElementById("opa").style.opacity = "100%";
+}
+
+function roll() {
+    const scrollY = window.scrollY;
+    if (scrollY > 50) {
+        document.getElementById("mySideNav").style.width = "0";
     }
 }

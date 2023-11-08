@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="banner1">
-        <div class="navbar"  onscrollY="roll()">
+    <div class="banner1" id="banner1">
+        <div class="navbar"  onscroll="roll()">
             <div class="logo">NOAH</div>
             <ul>
                 <li>Home</li>
@@ -16,9 +16,23 @@
                 <li onclick = "scrollToSectio()">Contact</li>
                 <li>About</li>
             </ul>
-            <div class="icon">[][]</div>
+            <div class="iconss">
+                <div id = "dicon" onclick="openNav()">&#9776;</div>
+                <div id = "dicon2" onclick="closeNav()">&times;</div>
+            </div>
+            
+
         </div>
-        <div class="cp">
+        <div id="mySideNav" class="navbar2">
+            <ul>
+                <li>Home</li>
+                <li onclick = "scrollToSection()">My Works</li>
+                <li onclick = "scrollToSectio()">Contact</li>
+                <li>About</li>
+            </ul>
+        </div>
+
+        <div class="cp" id="opa">
             <div class="content">
                 <li><h4>I am a</h4></li>
                 <li><h2 class = "mobile">WEB  DEVELOPER</h2></li>
@@ -34,9 +48,9 @@
     </div>
 
     <div id="banner2">
-        <div class="what">WHAT I DO</div>
+        <div class="what" id="opa">WHAT I DO</div>
         <div class="card-holder">
-            <div class="one card" onmouseover="">
+            <div class="one card" onmouseover="" id="opa">
                 <div class="mini1">
                     UI/UX
                 </div>
