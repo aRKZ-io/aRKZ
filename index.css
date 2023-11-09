@@ -431,6 +431,8 @@ footer li h3{
     }
     .card{
         height: 12rem;
+        font-size: medium;
+        font-weight: normal;
     }
     .one{
         opacity: 90%;
